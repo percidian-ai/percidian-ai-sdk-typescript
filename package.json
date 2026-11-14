@@ -151,7 +151,7 @@
         "node": ">=18"
     },
     "sideEffects": false,
-    "description": "Percidian's TypeScript SDK for the Percept One API.",
+    "description": "Percidian's TypeScript SDK for Percept One.",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/percidian-ai/percidian-ai-sdk-typescript.git"

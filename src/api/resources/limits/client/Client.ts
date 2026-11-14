@@ -23,7 +23,7 @@ export class LimitsClient {
     }
 
     /**
-     * Your organization's tier, its limits, what remains of each now, how soon each minute limit is full again, each model's own (`models`), whether its credit is `ok` or `exhausted`, and its prepaid balance. The tier rises with lifetime prepaid credit: tier 2 from $100, tier 3 from $500, tier 4 from $2,500 and tier 5 from $10,000. Reading it counts against no limit.
+     * Your organization's tier, its limits, what remains of each now, how soon each minute limit is full again, each model's own (`models`), whether its credit is `ok` or `exhausted`, and its prepaid balance. Reading it counts against no limit.
      *
      * @param {LimitsClient.RequestOptions} requestOptions - Request-specific configuration.
      *

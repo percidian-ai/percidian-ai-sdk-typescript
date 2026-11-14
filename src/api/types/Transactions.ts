@@ -30,7 +30,7 @@ export namespace Transactions {
             id: number;
             /** `transaction`. */
             object: Item.Object_;
-            /** `grant`: credit bought. `usage`: work billed. `refund`: credit returned. `adjust`: a correction. `credit_grant`: credit Percidian granted you, which is not lifetime prepaid credit and can expire. `credit_expiry`: what was left of a granted credit when it expired. */
+            /** `grant`: credit bought. `usage`: work billed. `refund`: credit returned. `adjust`: a correction. `credit_grant`: credit Percidian granted you, which can expire. `credit_expiry`: what was left of a granted credit when it expired. */
             type: Item.Type;
             /** Signed: a grant or credit grant adds; usage, a refund and a credit expiry take away. */
             amount_micro: number;
@@ -49,7 +49,7 @@ export namespace Transactions {
                 Transaction: "transaction",
             } as const;
             export type Object_ = (typeof Object_)[keyof typeof Object_];
-            /** `grant`: credit bought. `usage`: work billed. `refund`: credit returned. `adjust`: a correction. `credit_grant`: credit Percidian granted you, which is not lifetime prepaid credit and can expire. `credit_expiry`: what was left of a granted credit when it expired. */
+            /** `grant`: credit bought. `usage`: work billed. `refund`: credit returned. `adjust`: a correction. `credit_grant`: credit Percidian granted you, which can expire. `credit_expiry`: what was left of a granted credit when it expired. */
             export const Type = {
                 Grant: "grant",
                 Usage: "usage",
